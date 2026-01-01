@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,19 +110,19 @@
         .btn-outline:hover { color: var(--white); }
         .btn-outline:hover::before { width: 100%; }
 
-        /* --- HEADER --- */
+        /* --- HEADER (UPDATED) --- */
         header {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            /* CHANGED: Background color set to Primary Purple */
+            background-color: var(--primary-purple); 
             padding: 20px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
         }
 
         .logo img {
@@ -213,17 +214,16 @@
         }
 
         .split-visual {
-            /* Updated for Image */
             border-radius: 30px;
             height: 400px;
-            overflow: hidden; /* Ensures image corners are rounded */
+            overflow: hidden; 
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .split-visual img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures image fills the box without stretching */
+            object-fit: cover; 
         }
 
         /* --- WHY CHOOSE US --- */
@@ -456,7 +456,7 @@
         }
         .review-role { font-weight: 400; color: #888; }
 
-        /* --- SECTION 5: CONTACT (Two Column Layout) --- */
+        /* --- SECTION 5: CONTACT --- */
         .contact-section {
             padding: 100px 5%;
             background: var(--white);
@@ -487,7 +487,7 @@
             color: var(--dark-text);
         }
         .contact-title span {
-            color: var(--secondary-teal); /* Teal accent from draft */
+            color: var(--secondary-teal); 
             font-style: italic;
         }
 
@@ -545,7 +545,7 @@
         .detail-icon {
             width: 48px;
             height: 48px;
-            background: rgba(91, 79, 217, 0.1); /* Light purple bg */
+            background: rgba(91, 79, 217, 0.1); 
             border-radius: 12px;
             display: flex;
             align-items: center;
@@ -562,7 +562,7 @@
             align-items: center;
             gap: 15px;
             padding: 15px 25px;
-            background: rgba(229, 255, 0, 0.2); /* Light Lime */
+            background: rgba(229, 255, 0, 0.2); 
             border: 1px solid rgba(229, 255, 0, 0.5);
             border-radius: 15px;
         }
@@ -648,7 +648,7 @@
         <div class="logo">
             <img src="shoplivex_logo.png" alt="ShopliveX Logo">
         </div>
-        <a href="#contact" class="btn btn-primary">Book Strategy Call</a>
+        <a href="#contact" class="btn btn-secondary">Book Strategy Call</a>
     </header>
 
     <section class="hero">
